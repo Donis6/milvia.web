@@ -1,30 +1,80 @@
-body{
-    background-image: url(pictures/Romi.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+body, html {
     height: 100%;
-}
-ul {
-    background-color: transparent;
-    list-style: none;
-    text-align: center;
-    color: black;
-    padding: 0%;
     margin: 0%;
-    top: 0%;
-    width: 100%;
+    color: black;
+    background-color: transparent;
 }
 
-li, a {
-    color: black;
+ul {/*bar menu control*/
+    color: white;
+    text-align: right;
+    background-color: black;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li, a, .bmune{ /*control all the links inside the bar menu*/
+    color: white;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 0px;
+    text-transform: uppercase;
+    font: 20px "Lato";
     text-decoration: none;
-    font-size: xx-large;
-    display: inline;
-    padding: 5px;
-    
 }
-.Romiinblue {
+
+.pic-1, .pic-2, .pic-3 {
+    position: relative;
+    opacity: 0.90;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.pic-1 {
+    background-image: url(pictures/Romi.png);
+    min-height: 100%;
+}
+.pic-2 {
+    background-image: url(pictures/small.jpg);
+    min-height: 500px;
+}
+.pic-3 {
+    background-image: url(pictures/small1.jpg);
+    min-height: 700px;
+}
+.caption {
     position: absolute;
-    top: 130%;
-    
+    left: 0%;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
 }
+.caption span.border {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.title1 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: black;
+}
+.title2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: white;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .pic-1, .pic-2, .pic-3 {
+      background-attachment: scroll;
+    }
+  }
