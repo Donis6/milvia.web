@@ -1,0 +1,30 @@
+body{
+    background-image: url(pictures/Romi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+ul {
+    background-color: transparent;
+    list-style: none;
+    text-align: center;
+    color: black;
+    padding: 0%;
+    margin: 0%;
+    top: 0%;
+    width: 100%;
+}
+
+li, a {
+    color: black;
+    text-decoration: none;
+    font-size: xx-large;
+    display: inline;
+    padding: 5px;
+    
+}
+.Romiinblue {
+    position: absolute;
+    top: 130%;
+    
+}
